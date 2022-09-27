@@ -11,8 +11,6 @@ public class LinkedList {
 		System.out.println("Linkedlist Node");
 		list.display();
 		System.out.println();
-		list.removeLast();
-		System.out.println("\nLast Node Deleted");
-		list.display();
+		list.search(30);
 	}
 }
