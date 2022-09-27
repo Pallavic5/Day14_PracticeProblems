@@ -5,10 +5,9 @@ public class LinkedList {
 	public static void main(String[] args) {
 		
 		LinkedListOperation list = new LinkedListOperation();
-		list.insertFirst(70);
-		list.insertFirst(30);
-		list.insertFirst(56);
-		System.out.println();
+		list.insertLast(56);
+		list.insertLast(30);
+		list.insertLast(70);
 		list.display();
 	}
 }
