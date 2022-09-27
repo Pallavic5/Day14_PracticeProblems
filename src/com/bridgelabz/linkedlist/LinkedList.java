@@ -12,5 +12,9 @@ public class LinkedList {
 		list.display();
 		System.out.println();
 		list.search(30);
+		System.out.println();
+		list.insertNthPosition(40, 3);
+		System.out.println("New LinkedList");
+		list.display();
 	}
 }
