@@ -83,6 +83,26 @@ public class LinkedListOperation {
 		}
 	}
 
+	public void removeNthPosition(int pos) {
+		if (head == null) {
+			System.out.println("List is empty!!");
+		} else if (pos <= 0 || pos > counter) {
+			System.out.println("Invalid Position!!");
+		} else if (pos == 1) {
+			removeFirst();
+		} else {
+			Node temp = head;
+			Node prev = null;
+			for (int i = 1; i < pos; i++) {
+				prev = temp;
+				temp = temp.next;
+			}
+			prev.next = temp.next;
+			temp.next = null;
+			temp = null;
+		}
+	}
+
 	public void search(int data) {
 		Node temp = head;
 		int i = 1;
@@ -116,4 +136,21 @@ public class LinkedListOperation {
 			}
 		}
 	}
+
+	public int getSize() {
+		int count = 0;
+
+		if (head == null)
+			return count;
+
+		Node temp = head;
+		while (temp != null) {
+			count++;
+			temp = temp.next;
+		}
+		System.out.println("Linked List size is = " + count);
+		return count;
+	}
+
+	
 }
