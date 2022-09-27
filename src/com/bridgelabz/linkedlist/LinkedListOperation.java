@@ -67,6 +67,22 @@ public class LinkedListOperation {
 			temp = null;
 		}
 	}
+	
+	public void removeLast() {
+		if(head == null) {
+			System.out.println("List is empty!!");
+		}
+		else {
+			Node temp = head;
+			Node prev = null;
+			while(temp.next != null) {
+				prev = temp;
+				temp = temp.next;
+			}
+			prev.next = null;
+			temp = null;
+		}
+	}
 
 	public void display() {
 		if (head == null) {
