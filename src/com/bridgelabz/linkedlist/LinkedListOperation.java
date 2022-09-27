@@ -57,6 +57,17 @@ public class LinkedListOperation {
 		}
 	}
 
+	public void removeFirst() {
+		if (head == null) {
+			System.out.println("List is Empty!!");
+		} else {
+			Node temp = head;
+			head = head.next;
+			temp.next = null;
+			temp = null;
+		}
+	}
+
 	public void display() {
 		if (head == null) {
 			System.out.println("List is empty!!");
